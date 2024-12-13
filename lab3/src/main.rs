@@ -150,8 +150,7 @@ fn main() {
         println!("2. List Tasks");
         println!("3. Edit Task");
         println!("4. Delete Task");
-        println!("5. Save Tasks");
-        println!("6. Exit");
+        println!("5. Exit");
         println!("Enter your choice:");
 
         let mut choice = String::new();
@@ -164,9 +163,8 @@ fn main() {
             "2" => list_tasks(&tasks),
             "3" => edit_task(&mut tasks),
             "4" => delete_task(&mut tasks),
-            "5" => save_tasks(&tasks),
-            "6" => {
-                save_tasks(&tasks);
+            "5" => {
+                save_tasks(& tasks);
                 println!("Exiting the program. Goodbye!");
                 break;
             }
